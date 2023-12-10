@@ -1,0 +1,39 @@
+docker --version: Check the Docker version installed on your system.
+
+docker pull [image]: Download a Docker image from a container registry. For example, docker pull ubuntu downloads the Ubuntu base image.
+
+docker images: List all Docker images that are currently on your system.
+
+docker ps: List all running containers.
+
+docker ps -a: List all containers, including those that are stopped.
+
+docker run [options] [image] [command]: Create and start a new container based on the specified image. For example, docker run -it ubuntu bash runs a bash shell inside a new Ubuntu container.
+
+docker start [container]: Start a stopped container.
+
+docker stop [container]: Stop a running container gracefully.
+
+docker kill [container]: Forcefully stop a running container.
+
+docker restart [container]: Stop and then start a container.
+
+docker rm [container]: Remove a stopped container. Use the -f option to forcefully remove a running container.
+
+docker rmi [image]: Remove a Docker image. You must first remove all containers based on the image.
+
+docker build [options] [path to Dockerfile]: Build a Docker image from a Dockerfile. For example, docker build -t my-image . builds an image with the tag "my-image" from the current directory.
+
+docker exec [options] [container] [command]: Run a command inside a running container. For example, docker exec -it my-container bash opens a bash shell in the "my-container" container.
+
+docker logs [container]: View the logs of a container.
+
+docker network [subcommand]: Manage Docker networks. Common subcommands include docker network create, docker network ls, and docker network connect.
+
+docker volume [subcommand]: Manage Docker volumes for persistent data. Common subcommands include docker volume create, docker volume ls, and docker volume rm.
+
+docker-compose [command]: Manage multi-container applications using a Compose file. Common commands include up, down, logs, and ps.
+
+docker info: Display system-wide information about Docker.
+
+docker system [subcommand]: Manage Docker's disk usage and clean up. Common subcommands include docker system df and docker system prune.
